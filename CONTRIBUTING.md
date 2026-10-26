@@ -220,7 +220,7 @@ Do this once on each computer you use, before your first change.
 1. Open the file you want to change from the Explorer. To create a new file, right-click the folder it belongs in (or the empty space below the file list, for a file at the top level) and choose **New File**. Type the name, ending in `.md`, in the box that appears, and press **Enter**. To delete a file, right-click it, choose **Delete**, then **Move to Recycle Bin**. Leave **Do not ask me again** unticked, so VS Code keeps asking before it deletes a file.
 2. Make your change, then press **Ctrl + S** to save.
 
-> **Tip:** a white dot on a file's tab means unsaved changes. When you're editing a long line that wraps onto several lines, press **End** before **Enter** to reach the true end of the line. Pressing **Enter** in the middle splits the line, which can break a table row.
+> **Tip:** a white dot on a file's tab means unsaved changes. When you're editing a long line that wraps onto several lines, press **End** twice before **Enter**: the first press stops at the end of the screen line, and the second goes to the true end of the line. Pressing **Enter** in the middle splits the line, which can break a table row.
 
 **Result:** the tab shows no white dot, and the file shows **M** (modified) or **U** (new) in the Explorer. A deleted file disappears from the Explorer and shows **D** in Source Control.
 
@@ -255,9 +255,10 @@ If your change affects the content, accuracy, or structure of the documentation 
 
 1. Click the **Source Control** icon. If you only see the Graph, click the arrow next to **Changes** to expand it.
 2. Check that VS Code's title bar shows the documentation repository, that no tab shows a white dot, and that the Changes list holds only the files for this change. Changes you haven't saved aren't included in the commit.
-3. Stage the files: point at each file and click its **+** (**Stage Changes**), or point at the **Changes** line and click its **+** (**Stage All Changes**). Don't click the curved arrow beside it: it discards your changes. The files move under **Staged Changes**.
-4. In the message box, write a commit message that follows the team rules.
-5. Click **Commit**.
+3. Click each file in the Changes list to see exactly what you changed. Check that every change is one you meant to make.
+4. Stage the files: point at each file and click its **+** (**Stage Changes**), or point at the **Changes** line and click its **+** (**Stage All Changes**). Don't click the curved arrow beside it: it discards your changes. The files move under **Staged Changes**.
+5. In the message box, write a commit message that follows the team rules.
+6. Click **Commit**.
 
 > **Note:** if VS Code says "There are no staged changes to commit", click **Cancel**, stage the files, and commit again. Staging everything automatically can include changes you didn't mean to commit. Check the commit message before you click **Commit**: once it's pushed, it can't be changed.
 
@@ -353,7 +354,7 @@ If VS Code warns that the branch isn't fully merged, the branch has commits that
 | A tab you didn't expect shows a white dot | The tab holds unsaved edits | If you're not sure what they are, close the tab and click **Don't Save**. If you already saved them, open the file in Source Control to see the changes, and choose **Discard Changes** to restore the committed version. |
 | You deleted a file by mistake | The file was deleted in the Explorer | In Source Control, point at the file (marked **D**), click **Discard Changes**, then **Restore File**. |
 | A table displays as plain text | The separator row has a different number of columns from the header | Give the separator row one `---` cell per column, so it matches the header. Check the preview. |
-| A table row is split across two lines | **Enter** was pressed in the middle of a wrapped line | Join the lines again. Press **End** before **Enter** on long lines. |
+| A table row is split across two lines | **Enter** was pressed in the middle of a wrapped line | Join the lines again. On long lines, press **End** twice before **Enter**. |
 | Text displays as raw code | A code block is missing its closing fence | Add three backticks on their own line where the code block should end. |
 | Part of a page is missing from the preview | An HTML comment (`<!--`) was never closed | Find the `<!--` above the missing part and add `-->` where the comment should end. |
 | Headings or paragraphs display as code or don't format after pasting | Pasted text brought hidden spaces at the start of lines | Select the lines and press **Shift + Tab** until they start at the left edge. If a line doesn't move, click just before its first word and press **Backspace** until it does. |
