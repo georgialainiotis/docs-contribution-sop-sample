@@ -7,8 +7,8 @@
 | Document ID | DOC-SOP-001 |
 | Version | 1.0 |
 | Owner | Maintainer |
-| Effective date | YYYY-MM-DD |
-| Next review date | YYYY-MM-DD |
+| Effective date | 2026-10-26 |
+| Next review date | 2027-04-26 |
 
 ## 1. Purpose
 
@@ -281,7 +281,7 @@ Before you click **Commit**, Source Control looks like this:
 
 1. On GitHub, open the repository and refresh the page. A banner says your branch had recent pushes. Click **Compare & pull request**.
 2. Check the top of the page shows **base: main** and **compare:** your branch.
-3. Keep or edit the title. It usually matches your commit message.
+3. Keep or edit the title. If your branch has one commit, the title is its commit message. If it has more, GitHub uses the branch name instead: edit it to follow the commit message rules.
 4. Fill in the description. The box already holds the team's pull request template: four headings (**What changed**, **Why**, **Notes for the reviewer**, and **Checks**), each with a short hint between `<!--` and `-->`. The hints are instructions for you, and they don't appear in the finished pull request. Write your answer under each heading.
 5. Under **Checks**, there's a list of the checks from B4 and B5, each starting with `- [ ]`. For each check you completed, type an `x` between the brackets, with no spaces: `- [x]`. Leave checks that don't apply as `- [ ]`, for example the changelog check for a typo fix.
 6. Click the **Preview** tab to check the description.
@@ -368,6 +368,7 @@ If VS Code warns that the branch isn't fully merged, the branch has commits that
 | --- | --- | --- |
 | The **Compare & pull request** banner doesn't appear | The banner only appears for a short time after a push, and not if a pull request is already open for the branch | On GitHub, open the repository and click **Pull requests**, then **New pull request**. Set **base** to **main** and **compare** to your branch. Click **Create pull request** to open the form, then continue from B8 step 3. |
 | GitHub says **There isn't anything to compare** | The branch in **compare** has no changes that aren't already on main: it's already merged, it's the wrong branch, or your commits haven't reached GitHub | Check that **compare** shows your branch. Then, in VS Code, check your commits are published: the bottom-left corner shows a sync icon, not a cloud icon (B7). |
+| You clicked **Create pull request** before filling in the description | The form was submitted before the description was complete | Click **…** at the top right of your description (the first box on the **Conversation** tab), then **Edit**. Fill in every section, then click **Update comment**. |
 | The pull request banner appears on the wrong repository | The commit was made in another repository's folder | Don't open a pull request. Contact the maintainer. Next time, check the title bar before committing. |
 | Your commits on GitHub have no **Verified** badge | Commits made on your computer aren't signed | Nothing is wrong. Signing commits isn't covered by this procedure; follow your onboarding instructions if your team requires it. |
 
@@ -425,6 +426,6 @@ GitHub keeps pull requests and commit history automatically, for as long as the 
 
 | Version | Date | Author | Changes |
 | --- | --- | --- | --- |
-| 1.0 | YYYY-MM-DD | Georgia Lainiotis | First version. Drafted and tested in October 2026, and revised after a full review before approval. |
+| 1.0 | 2026-10-26 | Georgia Lainiotis | First version. Drafted and tested in October 2026, and revised after a full review before merging. |
 
 © 2026 Georgia Lainiotis. All rights reserved.
