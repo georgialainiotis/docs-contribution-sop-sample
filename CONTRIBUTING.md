@@ -5,7 +5,7 @@
 | Field | Value |
 | --- | --- |
 | Document ID | DOC-SOP-001 |
-| Version | 1.0 |
+| Version | 1.1 |
 | Owner | Maintainer |
 | Effective date | 2026-10-26 |
 | Next review date | 2027-04-26 |
@@ -339,7 +339,7 @@ If the reviewer hasn't responded within two working days:
 
 If VS Code warns that the branch isn't fully merged, the branch has commits that aren't on GitHub. Stop and contact the maintainer. Don't force the deletion.
 
-**Result:** your branch no longer appears in the branch list.
+**Result:** your branch no longer appears under **branches** in the branch list. A copy named `origin/` and your branch name may still appear under **remote branches**: it's VS Code's record of the branch as it was on GitHub before it was deleted there. Don't choose it, because choosing it creates a new local copy of the branch. To clear it from the list, press **Ctrl + Shift + P**, type `Git: Fetch (Prune)`, and choose it.
 
 ## 11. Troubleshooting
 
@@ -427,5 +427,6 @@ GitHub keeps pull requests and commit history automatically, for as long as the 
 | Version | Date | Author | Changes |
 | --- | --- | --- | --- |
 | 1.0 | 2026-10-26 | Georgia Lainiotis | First version. Drafted and tested in October 2026, and revised after a full review before merging. |
+| 1.1 | 2026-10-26 | Georgia Lainiotis | Updated the D2 result to explain the `origin/` copy of a deleted branch and how to clear it. |
 
 © 2026 Georgia Lainiotis. All rights reserved.
