@@ -301,10 +301,6 @@ The screenshot below shows the Source Control panel, on the left of the window, 
 7. When everything is correct, click **Create pull request**.
 8. On the right of the pull request, click **Reviewers** and choose a reviewer from the documentation team.
 
-The banner in step 1 looks like this. Your repository's files and branch name will be different:
-
-![GitHub repository page with a banner saying the branch had recent pushes, and a Compare & pull request button](images/compare-pull-request-banner.png)
-
 **Result:** the pull request shows a green **Open** label and the reviewer's name under **Reviewers**.
 
 ### C. Respond to review
@@ -452,7 +448,7 @@ GitHub keeps pull requests and commit history automatically, for as long as the 
 | 1.0 | 2026-10-26 | Georgia Lainiotis | First version. Drafted and tested in October 2026, and revised after a full review before merging. |
 | 1.1 | 2026-10-26 | Georgia Lainiotis | Updated the D2 result to explain the `origin/` copy of a deleted branch and how to clear it. |
 | 1.2 | 2026-10-30 | Georgia Lainiotis | Revised after a full read-through: clearer steps and results throughout, a Graph key term, a revised diagram, new and corrected Troubleshooting rows, and links between sections. Each change was tested in VS Code and on GitHub where possible. |
-| 1.3 | 2026-11-20 | Georgia Lainiotis | Retook the two Visual Studio Code screenshots as whole, unmarked windows, to meet Microsoft's conditions for screenshots of its products, and added "Used with permission from Microsoft." below each. Added a note that the sample isn't affiliated with or endorsed by Microsoft, GitHub, or the makers of the other tools it names. Used the full product names Visual Studio Code, Windows 11, and Microsoft OneDrive, and added a line at the end naming Microsoft's trademarks. Clarified the portfolio note and the text and alt text around the screenshots. |
+| 1.3 | 2026-11-20 | Georgia Lainiotis | Retook the two Visual Studio Code screenshots as whole, unmarked windows, to meet Microsoft's conditions for screenshots of its products, and added "Used with permission from Microsoft." below each. Added a note that the sample isn't affiliated with or endorsed by Microsoft, GitHub, or the makers of the other tools it names. Used the full product names Visual Studio Code, Windows 11, and Microsoft OneDrive, and added a line at the end naming Microsoft's trademarks. Clarified the portfolio note and the text and alt text around the screenshots. Removed the GitHub screenshot from B8, since step 1 already describes the banner. |
 
 Microsoft, OneDrive, Visual Studio, VS Code, and Windows are trademarks of the Microsoft group of companies.
 

@@ -6,6 +6,7 @@ Content changes to this documentation, newest first. Typo fixes and housekeeping
 
 - Replaced the two Visual Studio Code screenshots in the SOP with whole, unmarked windows, and added Microsoft's permission statement below each
 - Added a note to the SOP that it isn't affiliated with or endorsed by Microsoft, GitHub, or the makers of the other tools it names
+- Removed the GitHub screenshot from step B8 of the SOP, since the step already describes the banner
 
 ## 2026-10-30
 
