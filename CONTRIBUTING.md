@@ -1,14 +1,14 @@
 # Contributing Documentation Changes Through a GitHub Pull-Request Workflow
 
-> **Portfolio sample.** The documentation team, its rules, and its style guide are fictional. The procedure was tested in VS Code and GitHub in October 2026, with one person acting as both author and reviewer. Because GitHub doesn't let authors review or approve their own pull requests, the steps for requesting a review (B8 step 8) and the reviewer's approval (C3) were written from GitHub's documentation, not tested.
+> **Portfolio sample.** The documentation team, its rules, and its style guide are fictional. This sample is independent and isn't affiliated with or endorsed by Microsoft, GitHub, or the makers of the other tools it names. The procedure was tested in Visual Studio Code (VS Code) and GitHub in October 2026, with one person acting as both author and reviewer, and the VS Code screenshots were retaken in November 2026. GitHub doesn't allow authors to request reviews from themselves or to approve their own pull requests, so the steps for requesting a review (B8 step 8) and for the reviewer's approval (C3) are based on GitHub's documentation and weren't tested.
 
 | Field | Value |
 | --- | --- |
 | Document ID | DOC-SOP-001 |
-| Version | 1.2 |
+| Version | 1.3 |
 | Owner | Maintainer |
-| Effective date | 2026-10-30 |
-| Next review date | 2027-04-30 |
+| Effective date | 2026-11-20 |
+| Next review date | 2027-05-20 |
 
 ## 1. Purpose
 
@@ -40,7 +40,7 @@ Use this procedure whenever you want to add, change, or remove content in the do
 - Contributing from a fork (used by contributors without access to the repository).
 - Resolving merge conflicts. If GitHub reports a conflict, stop and contact the maintainer.
 - Signing commits. If your team requires signed commits, follow your onboarding instructions.
-- macOS. The steps were tested on Windows.
+- macOS. The steps were tested on Windows 11.
 - Writing style and content standards. Follow the team style guide.
 - Publishing or building the documentation site.
 
@@ -50,7 +50,7 @@ Before you start, make sure you have:
 
 - A GitHub account, added to the documentation repository by the maintainer.
 - The repository address, from the maintainer.
-- VS Code installed ([code.visualstudio.com](https://code.visualstudio.com)).
+- Visual Studio Code installed ([code.visualstudio.com](https://code.visualstudio.com)).
 - Git installed ([git-scm.com](https://git-scm.com)).
 - Git configured with your name and your GitHub no-reply email address (see the note below).
 - These VS Code extensions: markdownlint (David Anson) and Code Spell Checker (Street Side Software). The repository offers to install them when you open it. Check for the blue verified tick next to the publisher's name, so you install the real extension and not a fake one with a similar name (often called a copycat).
@@ -133,7 +133,7 @@ The steps were tested with these tools and versions. Menus and labels can change
 | Tool | Tested with |
 | --- | --- |
 | Windows | Windows 11, version 25H2 |
-| VS Code | 1.142.0 to 1.143.1 |
+| Visual Studio Code | 1.142.0 to 1.143.1 (screenshots: 1.147.0) |
 | Git | 2.56.0.windows.2 |
 | markdownlint extension | 0.62.1 |
 | Code Spell Checker extension | 4.10.0 |
@@ -184,7 +184,7 @@ Two steps can repeat. If the checks fail, go back and fix your content before yo
 
 Do this once, before your first change. If you later work on another computer, do it there too.
 
-> **Warning:** clone into a folder that's only on your computer, such as `C:\Users\<your-name>\GitHub`. Don't clone into a folder that a cloud storage service such as OneDrive, Dropbox, or Google Drive copies automatically. These services can lock or change Git's hidden files while Git is using them, which can damage your copy of the repository.
+> **Warning:** clone into a folder that's only on your computer, such as `C:\Users\<your-name>\GitHub`. Don't clone into a folder that a cloud storage service such as Microsoft OneDrive, Dropbox, or Google Drive copies automatically. These services can lock or change Git's hidden files while Git is using them, which can damage your copy of the repository.
 
 1. On GitHub, open the repository, click the green **Code** button, make sure **HTTPS** is selected, and click the copy icon next to the address. Copy it now, before you open the clone box in VS Code: that box closes if you click away from it.
 2. In VS Code, if a folder is already open, click **File > Close Folder**. The Welcome page appears. If it doesn't, click **Help > Welcome**.
@@ -195,7 +195,9 @@ Do this once, before your first change. If you later work on another computer, d
 
 **Result:** the Explorer (the file list on the left of the window) shows the repository's name and files, and the bottom-left corner of VS Code shows **main**. Your repository's name and files will be different from the example below.
 
-![VS Code after cloning: the Explorer shows the repository and its README file, and the bottom-left corner shows main](images/clone-result.png)
+![The whole VS Code window after cloning. On the left, the Explorer shows the repository and its README.md file. The bottom-left corner shows main.](images/clone-result.png)
+
+*Used with permission from Microsoft.*
 
 ### B. Make a change
 
@@ -271,9 +273,11 @@ If your change affects the content, accuracy, or structure of the documentation 
 
 > **Note:** if you click **Commit** before staging, VS Code says "There are no staged changes to commit" and offers to stage all your changes and commit them. Click **Cancel**, stage the files you want (step 4), and commit again. Staging everything can include changes you didn't mean to commit. Don't click **Always**: VS Code would then stop asking, and stage and commit all your changes whenever you click **Commit** with nothing staged.
 
-Before you click **Commit**, Source Control looks like this. In the Graph, the cloud icon marks main as it is on GitHub. Your branch has no cloud yet, because it isn't on GitHub:
+The screenshot below shows the Source Control panel, on the left of the window, just before you click **Commit**. In the Graph, the cloud icon marks GitHub's copy of main. Your branch has no cloud yet, because it isn't on GitHub.
 
-![Source Control panel with a commit message in the message box and README.md under Staged Changes](images/staged-changes.png)
+![The whole VS Code window just before committing. On the left, the Source Control panel shows the commit message Add introduction to README, and README.md under Staged Changes.](images/staged-changes.png)
+
+*Used with permission from Microsoft.*
 
 **Result:** the Changes list is empty, and your commit appears at the top of the Graph, with your branch's label beside it.
 
@@ -296,10 +300,6 @@ Before you click **Commit**, Source Control looks like this. In the Graph, the c
 6. Click the **Preview** tab above the box. Check that the description reads correctly and that each ticked check shows as a ticked box. If anything is wrong, click **Write** to go back and fix it.
 7. When everything is correct, click **Create pull request**.
 8. On the right of the pull request, click **Reviewers** and choose a reviewer from the documentation team.
-
-The banner in step 1 looks like this. Your repository's files and branch name will be different:
-
-![GitHub repository page with a banner saying the branch had recent pushes, and a Compare & pull request button](images/compare-pull-request-banner.png)
 
 **Result:** the pull request shows a green **Open** label and the reviewer's name under **Reviewers**.
 
@@ -436,9 +436,9 @@ GitHub keeps pull requests and commit history automatically, for as long as the 
 - [Creating a pull request](https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request), GitHub documentation
 - [Setting your commit email address](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address), GitHub documentation
 - [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax), GitHub documentation
-- [Source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview), VS Code documentation
-- [Working with repositories and remotes](https://code.visualstudio.com/docs/sourcecontrol/repos-remotes), VS Code documentation
-- [Workspace Trust](https://code.visualstudio.com/docs/editing/workspaces/workspace-trust), VS Code documentation
+- [Source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview), Visual Studio Code documentation
+- [Working with repositories and remotes](https://code.visualstudio.com/docs/sourcecontrol/repos-remotes), Visual Studio Code documentation
+- [Workspace Trust](https://code.visualstudio.com/docs/editing/workspaces/workspace-trust), Visual Studio Code documentation
 - [markdownlint rules](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md), markdownlint documentation
 
 ## 16. Revision history
@@ -448,5 +448,8 @@ GitHub keeps pull requests and commit history automatically, for as long as the 
 | 1.0 | 2026-10-26 | Georgia Lainiotis | First version. Drafted and tested in October 2026, and revised after a full review before merging. |
 | 1.1 | 2026-10-26 | Georgia Lainiotis | Updated the D2 result to explain the `origin/` copy of a deleted branch and how to clear it. |
 | 1.2 | 2026-10-30 | Georgia Lainiotis | Revised after a full read-through: clearer steps and results throughout, a Graph key term, a revised diagram, new and corrected Troubleshooting rows, and links between sections. Each change was tested in VS Code and on GitHub where possible. |
+| 1.3 | 2026-11-20 | Georgia Lainiotis | Retook the two Visual Studio Code screenshots as whole, unmarked windows, to meet Microsoft's conditions for screenshots of its products, and added "Used with permission from Microsoft." below each. Added a note that the sample isn't affiliated with or endorsed by Microsoft, GitHub, or the makers of the other tools it names. Used the full product names Visual Studio Code, Windows 11, and Microsoft OneDrive, and added a line at the end naming Microsoft's trademarks. Clarified the portfolio note and the text and alt text around the screenshots. Removed the GitHub screenshot from B8, since step 1 already describes the banner. |
+
+Microsoft, OneDrive, Visual Studio, VS Code, and Windows are trademarks of the Microsoft group of companies.
 
 © 2026 Georgia Lainiotis. All rights reserved.
