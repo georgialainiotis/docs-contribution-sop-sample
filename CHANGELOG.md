@@ -2,7 +2,7 @@
 
 Content changes to this documentation, newest first. Typo fixes and housekeeping changes are not listed.
 
-## 2026-11-19
+## 2026-11-20
 
 - Replaced the two Visual Studio Code screenshots in the SOP with whole, unmarked windows, and added Microsoft's permission statement below each
 - Added a note to the SOP that it isn't affiliated with or endorsed by Microsoft, GitHub, or the makers of the other tools it names

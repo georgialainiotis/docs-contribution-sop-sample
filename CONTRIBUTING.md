@@ -7,8 +7,8 @@
 | Document ID | DOC-SOP-001 |
 | Version | 1.3 |
 | Owner | Maintainer |
-| Effective date | 2026-11-19 |
-| Next review date | 2027-05-19 |
+| Effective date | 2026-11-20 |
+| Next review date | 2027-05-20 |
 
 ## 1. Purpose
 
@@ -440,7 +440,7 @@ GitHub keeps pull requests and commit history automatically, for as long as the 
 - [Creating a pull request](https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request), GitHub documentation
 - [Setting your commit email address](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address), GitHub documentation
 - [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax), GitHub documentation
-- [Source Control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview), Visual Studio Code documentation
+- [Source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview), Visual Studio Code documentation
 - [Working with repositories and remotes](https://code.visualstudio.com/docs/sourcecontrol/repos-remotes), Visual Studio Code documentation
 - [Workspace Trust](https://code.visualstudio.com/docs/editing/workspaces/workspace-trust), Visual Studio Code documentation
 - [markdownlint rules](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md), markdownlint documentation
@@ -452,6 +452,8 @@ GitHub keeps pull requests and commit history automatically, for as long as the 
 | 1.0 | 2026-10-26 | Georgia Lainiotis | First version. Drafted and tested in October 2026, and revised after a full review before merging. |
 | 1.1 | 2026-10-26 | Georgia Lainiotis | Updated the D2 result to explain the `origin/` copy of a deleted branch and how to clear it. |
 | 1.2 | 2026-10-30 | Georgia Lainiotis | Revised after a full read-through: clearer steps and results throughout, a Graph key term, a revised diagram, new and corrected Troubleshooting rows, and links between sections. Each change was tested in VS Code and on GitHub where possible. |
-| 1.3 | 2026-11-19 | Georgia Lainiotis | Retook the two Visual Studio Code screenshots as whole, unmarked windows, to meet Microsoft's conditions for screenshots of its products, and added "Used with permission from Microsoft." below each. Added a note that the sample isn't affiliated with or endorsed by Microsoft, GitHub, or the makers of the other tools it names. Used the full product names Visual Studio Code, Windows 11, and Microsoft OneDrive. Clarified the portfolio note and the text and alt text around the screenshots. |
+| 1.3 | 2026-11-20 | Georgia Lainiotis | Retook the two Visual Studio Code screenshots as whole, unmarked windows, to meet Microsoft's conditions for screenshots of its products, and added "Used with permission from Microsoft." below each. Added a note that the sample isn't affiliated with or endorsed by Microsoft, GitHub, or the makers of the other tools it names. Used the full product names Visual Studio Code, Windows 11, and Microsoft OneDrive, and added a line at the end naming Microsoft's trademarks. Clarified the portfolio note and the text and alt text around the screenshots. |
+
+Microsoft, OneDrive, Visual Studio, VS Code, and Windows are trademarks of the Microsoft group of companies.
 
 © 2026 Georgia Lainiotis. All rights reserved.
